@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <form name='cadastro' action='formulario.html' method="GET">
+        <table width='500' height='400'>
+            <tr>
+                <td>Site:</td>
+                <td><input type='url' name='url' placeholder='https://www.exemplo.com' size='50'></td>
+            </tr>        
+            <tr>
+                <td>Nome:</td>
+                <td colspan='2'><input type='text' name='nome' value='Gabriel Rodrigues' size='50'></td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td colspan='2'><input type='number' name='idade' min='0' max='99' step='0.5' size='4'></td>
+            </tr>
+            <tr>
+                <td>Altura:</td>
+                <td colspan='2'><input type='range' name='altura' min='0' max='300' step='0.1'>cm</td>
+            </tr>
+            <tr>
+                <td>Data:</td>
+                <td><input type='date' name='data' value='2002-02-23' min='1900-01-01' max='2050-12-31'></td>
+            </tr>
+            <tr>
+                <td>Hora:</td>
+                <td><input type='time' name='hora' min='10:00' max='19:00' step='60'></td>
+            </tr>
+            <tr>
+                <td>Cidade:</td>
+                <td colspan='2'><input type='text' name='cidade'></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>Estado:<br>
+                    <select name='uf' size='5'>
+                        <option value='ac'>AC</option>
+                        <option value='am'>AM</option>
+                        <option value='ce'>CE</option>
+                        <option value='df'>DF</option>
+                        <option value='es'>ES</option>
+                        <option value='sp'>SP</option>
+                        <option value='pr'>PR</option>
+                        <option value='rj'>RJ</option>
+                    </select>
+                </td>
+                <td valign='middle'>Check List:<br>
+                    <input type='checkbox' name='farois' value='farois'>Faróis<br>
+                    <input type='checkbox' name='lanternas' value='lanternas'>Lanternas<br>
+                    <input type='checkbox' name='pneus' value='pneus'>Pneus<br>
+                    <input type='checkbox' name='estepe' value='estepe'>Estepe<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Estado Civil:<br>
+                    <input type='radio' name='estado_civil' value='solteiro'>Solteiro<br>
+                    <input type='radio' name='estado_civil' value='casado'>Casado<br>
+                    <input type='radio' name='estado_civil' value='viuvo'>Viúvo<br>
+                    <input type='radio' name='estado_civil' value='divorciado'>Divorciado<br>
+                    <input type='radio' name='estado_civil' value='uniao_estavel'>União Estável
+                </td>
+                <td>Escolaridade:<br>
+                    <input type='radio' name='escolaridade' value='nao_alfabetizado'>Não Alfabetizado<br>
+                    <input type='radio' name='escolaridade' value='fundamental_incompleto'>Fundamental Incompleto<br>
+                    <input type='radio' name='escolaridade' value='fundamental_completo'>Fundamental Completo<br>
+                    <input type='radio' name='escolaridade' value='medio_incompleto'>Médio Incompleto<br>
+                    <input type='radio' name='escolaridade' value='medio_completo'>Médio Completo<br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2'><br></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type='email' name='email' placeholder='exemplo@email.com' required></td>    
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type='password' name='senha' placeholder='Digite Sua Senha' minlength='3' maxlength='10' reset required></td>
+            </tr>
+            <tr>
+                <td colspan='2' height='5'></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan='2'>
+                    <input type='submit' value='Ok' name='enviar'>
+                    <input type='reset' value='limpar' name='limpar'>
+                </td>  
+            </tr>
+            <tr>
+                <td>Descrição</td>
+                <td>
+                    <br><br>
+                    <textarea name='desc' rows='5' cols=30></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+</body>
+</html>

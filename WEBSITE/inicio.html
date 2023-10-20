@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="assets/script.js"></script>
+
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <table class="table-nav">
+                <tr class="nav">
+                    <td><a href="inicio.html">Página Inicial</a></td>
+                    <td><a href="promo.html">Promoções</a></td>
+                    <td><a href="produtos.html">Produtos</a></td>
+                    <td><a href="sobre.html">Sobre Nós</a></td>
+                </tr>   
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_inicio">
+                <form action="inicio.html" method="get">
+                    <table>
+                        <tr>
+                            <th colspan="2" height="200"><font size="6">Cadastro de Viagem<br>AirLine Viagens</font></th>
+                        </tr>
+                        <tr>
+                            <td>Nome:</td>
+                            <td><input type="text" name="nome" required></td>
+                        </tr>
+                        <tr>
+                            <td>CPF:</td>
+                            <td><input type="cpf" name="cpf" placeholder="000.000.000-00" required></td>
+                        </tr>
+                        <tr>
+                            <td>CEP:</td>
+                            <td><input type="text" name="end" placeholder="00000-00" required></td>
+                        </tr>
+                        <tr>
+                            <td>Local da Viagem:</td>
+                            <td><input type="text" name="local"></td>
+                        </tr>
+                        <tr>
+                            <td>Horário da Viagem:</td>
+                            <td><input type="time" name="hr" required></td>
+                        </tr>
+                        <td>Classe:</td>
+                        <td>
+                            <select name="classe">
+                                <option value="vazio">&nbsp;</option>
+                                <option value="1">1° Classe</option>
+                                <option value="economica">Classe Economica</option>
+                            </select>
+                        </td>
+                        <tr>
+                            <td>Bagagem:</td>
+                            <td><input type="radio" name="bagagem" value="sim">Sim<br>
+                            <input type="radio" name="bagagem" value="nao">Não<br></td>
+                        </tr>
+                        <tr>
+                            <td colspan='2'>&nbsp;</td>
+                        </tr>
+                        <tr class="button">
+                            <td><input type="reset" value="Reset"></td>
+                            <td><input type="submit" value="Enter"></td>
+                        </tr>
+                    </table>
+                </form>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div class="tel-contato"><img src="assets/photos/tel_icon.png" alt="tel: ">    (15) 4002-8922</div>
+            <div class="fb"><a href="https://www.facebook.com/"><img src="assets/photos/facebook_icon.png">    facebook</a></div>
+            <div class="ig"><a href="https://www.instagram.com/"><img src="assets/photos/instagram_icon.png">    instagram</a></div>
+        </div>
+    </footer>
+</body>
+</html>

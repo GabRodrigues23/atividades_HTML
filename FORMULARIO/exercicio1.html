@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade Formulários</title>
+</head>
+    <body>
+        <center>
+            <form name='cadastro' action='exercicio.html' method="GET">
+                <table width='500' height='50' bgcolor='e5e5e5'>
+                    <tr>
+                        <th colspan='4' align='left' bgcolor='white'><font size='6'>Preencha o Formulário Abaixo</font></th>
+
+                    <tr>
+                        <td>Nome:</td>
+                        <td colspan='3'><input type='text' name='nome' size='70' required></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td colspan='3'><input type='text' name='endereco' size='70' required></td>
+                    </tr>
+                    <tr>
+                        <td>CEP:</td>
+                        <td width='20'><input type='text' name='cep' placeholder='00.000-00' size='15' required></td>
+                        <td align='left'>Telefone:</td>
+                        <td><input type='tel' name='tel' required></td>
+                    </tr>
+                    <tr>
+                        <td>Cidade:</td>
+                        <td><input type='text' name='cidade' size='15' required></td>
+                        <td align='left'>Estado:</td>
+                        <td>
+                            <select>
+                                <option name='uf' value='none'>&nbsp;</option>
+                                <option name='uf' value='am'>AM</option>
+                                <option name='uf' value='bh'>BH</option>
+                                <option name='uf' value='mg'>MG</option>
+                                <option name='uf' value='go'>GO</option>
+                                <option name='uf' value='sp'>SP</option>
+                                <option name='uf' value='rj'>RJ</option>
+                                <option name='uf' value='es'>ES</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'>Meio de transporte:</td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <select>
+                                <option name='transporte' value='none'>&nbsp;</option>
+                                <option name='transporte' value='n/a'>Sem meio de transporte</option>
+                                <option name='transporte' value='carro'>Carro</option>
+                                <option name='transporte' value='carro'>Moto</option>
+                                <option name='transporte' value='carro'>Ônibus</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='4' align='center'><input type='submit' value='   Enviar Dados   '></td>
+                    </tr>                
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

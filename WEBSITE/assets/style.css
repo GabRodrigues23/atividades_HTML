@@ -1,0 +1,164 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding: 15px;
+    background-color: rgba(172, 172, 172, 0.373);
+
+}
+
+.table-nav{
+    width: 500px;
+    height: 35px;
+    
+}
+
+.nav{
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.table-nav td:hover{
+    border-radius: 2%;
+    transform: scale(1.2);
+    background-color: rgb(13, 142, 234);
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+main{
+    margin: auto;
+}
+
+.main_inicio{
+    background: url(/assets/photos/background_inicio.jpg) center no-repeat;
+    padding: 50px 0;
+}
+
+.main_inicio table th{
+    text-align: center;
+}
+
+.main_inicio table{ 
+    max-width: 500px;
+    display: flex;
+    background: linear-gradient(to top, rgba(127, 6, 151, 0.296), rgba(0, 188, 209, 0.296));
+    border-radius: 10%;
+}
+
+.button input{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 55px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+.button input:hover{
+    cursor: pointer;
+    transform: scale(1.5)
+}
+
+.main_promo{
+    margin: 20px 0 80px;
+    display: flexbox;
+    text-align: center;
+}
+
+.main_promo img{
+    width: 800px;
+    height: 800px;
+}
+
+.main_produtos{
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(45, 0, 227, 0.358),rgba(182, 182, 182, 0.316));
+}
+
+.main_produtos table{
+    background: linear-gradient(to bottom, rgba(45, 0, 227, 0.358),rgba(182, 182, 182, 0.316));
+    max-width: 900px;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.main_produtos th font{
+    padding: 20px 50px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: antiquewhite;
+}
+
+.main_produtos img{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 60px;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.main_produtos img:hover{
+    transform: scale(1.05);
+}
+
+.main_sobre{
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+}
+
+.main_sobre table{
+    background-color: #fff;
+    border-radius: 3%;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+}
+
+footer{
+    height: 7vh;
+    background-color: rgba(172, 172, 172, 0.373);
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: space-around;
+    max-width: 50rem;
+
+
+}
+
+.contact img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+.contact a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}

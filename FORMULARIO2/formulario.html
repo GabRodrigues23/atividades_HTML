@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendamento Salão !!!</title>
+    </head>
+    <body background="background.jpg">
+        <center>
+            <form type="cadastro" action="formulario.html" type="GET">
+                <table bgcolor="pink" height="350px">
+                    <thead>
+                        <tr>
+                            <th colspan="10" align="center" height="200px" valign="middle"><font size="5"><b>FORMULÁRIO DE AGENDAMENTO</b></font></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--nome-->
+                            <td width="100">Nome: </td>
+                            <td colspan="3"><input type="nome" name="name" size="60px" required></td>
+                            <!--idade-->
+                            <td width="100" align='center'>Idade:</td>
+                            <td><input type="number" name='idade' size="3" min="0" max="99" step="1" required></td>
+                        </tr>
+                        <tr>
+                            <!--telefone-->
+                            <td>Telefone: </td>
+                            <td width="13"><input type="tel" name="tel" placeholder="(00) 0000-0000" size="14" required></td>
+                            <!--genero-->
+                            <td align="center" colspan="2">Genêro: 
+                                <input type="radio" name="gen" gen="masc">M
+                                <input type="radio" name="gen" value="fem">F
+                                <input type="radio" name="gen" value="n/a">Não Informar
+                            </td>
+                            <td align="center">Alergia: </td>
+                            <td>
+                                <input type="radio" name="alergia" value="sim">Sim
+                                <input type="radio" name="alergia" value="nao" checked>Não
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--hora-->
+                            <td>Data e Hora: </td>
+                            <td><input type="date" name="data" min="2022-01-01" max="2023-12-31"></td>
+                            <td><input type="time" name="hora" min="9:00" max="18:00" step="60" required></td>   
+                            <!--manicure-->
+                            <td></td>
+                            <td align="center">Manicure:</td>
+                            <td>
+                                <input type="radio" name="manicure" value="sim">Sim
+                                <input type="radio" name="manicure" value="nao" checked>Não
+                            </td>                 
+                        </tr>
+                        <tr>
+                            <!--procedimento-->
+                            <td>Procedimento:</td>
+                            <td colspan="5"><input type="text" name="procedimento" size="96" required></td>
+                        </tr>
+                        <tr>
+                            <!--Obs-->
+                            <td valign="middle">Descrição do Procedimento:</td>
+                            <td colspan="5"> 
+                                <textarea cols="75"></textarea>
+                            </td>
+                        </tr>
+                        <tr height="75">
+                            <!--reset-->
+                            <td colspan="2"></td>
+                            <td align="center"><input type="reset" value="Apagar"></td>
+                            <!--submit-->
+                            <td align="center"><input type="submit" value="Enviar"></td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td height="100" colspan="6" align="center" valign="bottom"><b><i>Em caso de cancelamento, favor entrar em contato via telefone: (15)3205-1023</i></b></td>
+                        </tr>
+                        <tr height="100" valign="bottom">
+                            <td align="right" colspan="2"><a href="https://www.facebook.com/" target="_blank"><img src="fb_icon_pink.png" alt="=Facebook" widht="50px" height="50px"></a></td>
+                            <td align="center" colspan="2"><a href="https://www.whatsapp.com/" target="_blank"><img src="wpp_icon_pink.png" alt="Whatsapp" widht="55px" height="55px"></a></td>
+                            <td align="left" colspan="2"><a href="https://www.instagram.com/" target="_blank"><img src="inst_icon_pink.png" alt="Instagram" widht="50px" height="50px"></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>
